@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://junaid2708.github.io/monster-hi-tech-solutions/sitemap.xml
