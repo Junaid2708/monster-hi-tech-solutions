@@ -46,42 +46,49 @@ header {
   z-index: 1000;
   background: linear-gradient(90deg, #003366, #0055aa);
   color: white;
-  padding: 1.2rem;
-  text-align: center;
+  padding: 1rem 5%;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-header .logo {
+/* Flex row: logo left, nav right */
+.top-bar {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-header .logo img {
-  height: 60px;
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.logo img {
+  height: 55px;
   transition: transform 0.3s ease;
 }
 
-header .logo img:hover {
+.logo img:hover {
   transform: rotate(-5deg) scale(1.05);
 }
 
-header h1 {
-  font-size: 1.8rem;
+.logo h1 {
+  font-size: 1.6rem;
   letter-spacing: 1px;
+  color: white;
+  white-space: nowrap;
 }
 
 .tagline {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-style: italic;
-  margin-top: 0.3rem;
+  text-align: center;
+  margin-top: 0.5rem;
 }
 
-nav {
-  margin-top: 1rem;
-}
-
+/* Navigation */
 nav a,
 .dropbtn {
   color: white;
